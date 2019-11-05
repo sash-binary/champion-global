@@ -1,5 +1,6 @@
 const path = require(`path`)
 module.exports = {
+    pathPrefix: '/champion-global/',
     siteMetadata: {
         title: `Champion Global Business Services`,
         description: `World-class support services for FinTech businesses`,
