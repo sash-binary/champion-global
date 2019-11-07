@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from '../containers/container'
-import Grid, { Column } from '../containers/grid'
+import { Column } from '../containers/grid'
 import { Header, Text } from '../../themes/typography'
 import screen from '../../themes/screens'
 import scrollTo from 'gatsby-plugin-smoothscroll'
@@ -11,6 +11,7 @@ import Phone from '../../images/svg/telephone.svg'
 
 const FooterSection = styled.footer`
     padding: 4rem 0;
+    margin: 0;
     background-color: var(--color-blue);
 
     ${Text} {
@@ -21,7 +22,29 @@ const FooterSection = styled.footer`
         text-align: center;
     }
 `
-const FooterGrid = styled(Grid)`
+const FooterGrid = styled.div`
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+
+    @media ${screen.md} {
+        grid-row-gap: 3rem;
+
+        ${Text} {
+            font-size: 1.2rem;
+        }
+    }
+    @media ${screen.sm} {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+`
+const ColGrid = styled.div`
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-row-gap: 2rem;
+
     @media ${screen.sm} {
         grid-template-columns: 3rem 1fr;
         grid-row-gap: 2rem;
@@ -40,20 +63,30 @@ const Company = styled.div`
 `
 const CompanyInfo = styled.div`
     margin: 0;
+
+    @media ${screen.md} {
+        display: block;
+    }
+`
+const Links = styled.div`
+    text-align: left;
+
+    @media ${screen.md} {
+        width: 100%;
+    }
 `
 const FooterLink = styled(Text)`
     cursor: pointer;
+
+    @media ${screen.md} {
+        padding: 0.5rem 0;
+    }
 `
 
 const Footer = () => (
     <FooterSection>
         <Container>
-            <Grid
-                columns="2fr 1fr 1fr"
-                columngap="3rem"
-                rowgap="5rem"
-                mobilerowgap="3rem"
-            >
+            <FooterGrid>
                 <Col>
                     <Company>
                         <Logo />
@@ -89,10 +122,9 @@ const Footer = () => (
                     >
                         Contact us
                     </Header>
-                    <FooterGrid
+                    <ColGrid
                         columns="3rem 1fr"
                         columngap="1rem"
-                        rowgap="1.2rem"
                     >
                         <Phone />
                         <Text
@@ -106,36 +138,38 @@ const Footer = () => (
                         >
                             hr@championgbs.com
                         </Text>
-                    </FooterGrid>
+                    </ColGrid>
                 </Col>
                 <Col>
-                    <Header
-                        as="h6"
-                        color="white"
-                        margin="0 0 1.5rem 0"
-                    >
-                        Links
-                    </Header>
-                    <FooterLink
-                        lh="2"
-                        onClick={() => scrollTo('#offer')}
-                    >
-                        Our core offering
-                    </FooterLink>
-                    <FooterLink
-                        lh="2"
-                        onClick={() => scrollTo('#who')}
-                    >
-                        Who we are
-                    </FooterLink>
-                    <FooterLink
-                        lh="2"
-                        onClick={() => scrollTo('#what')}
-                    >
-                        What we do
-                    </FooterLink>
+                    <Links>
+                        <Header
+                            as="h6"
+                            color="white"
+                            margin="0 0 0.8rem 0"
+                        >
+                            Links
+                        </Header>
+                        <FooterLink
+                            lh="2"
+                            onClick={() => scrollTo('#offer')}
+                        >
+                            Our core offering
+                        </FooterLink>
+                        <FooterLink
+                            lh="2"
+                            onClick={() => scrollTo('#who')}
+                        >
+                            Who we are
+                        </FooterLink>
+                        <FooterLink
+                            lh="2"
+                            onClick={() => scrollTo('#what')}
+                        >
+                            What we do
+                        </FooterLink>
+                    </Links>
                 </Col>
-            </Grid>
+            </FooterGrid>
         </Container>
     </FooterSection>
 )

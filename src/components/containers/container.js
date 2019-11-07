@@ -9,10 +9,10 @@ const Container = styled.div`
     margin-left: auto;
 
     @media ${screen.xxl} {
-        max-width: 1140px;
+        max-width: 1024px;
     }
     @media ${screen.xl} {
-        max-width: 1140px;
+        max-width: 1024px;
     }
     @media ${screen.lg} {
         max-width: 960px;

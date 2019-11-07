@@ -49,6 +49,7 @@ export const Header = styled(({ as = 'h1', children, ...props }) =>
             if (props.as === 'h1') return 'var(--text-size-xl)'
             if (props.as === 'h2') return 'var(--text-size-lg)'
             if (props.as === 'h3') return 'var(--text-size-md)'
+            if (props.as === 'h4') return 'var(--text-size-sm)'
             if (props.font_size) return props.font_size
         }};
     }

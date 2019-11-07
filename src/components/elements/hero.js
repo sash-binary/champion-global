@@ -30,7 +30,10 @@ const Cta = styled(Button)`
 `
 
 const Hero = () => (
-    <HeroSection id="hero" img={BackgroundImg}>
+    <HeroSection
+        id="hero"
+        img={BackgroundImg}
+    >
         <Container>
             <HeroContent
                 columns="1fr"

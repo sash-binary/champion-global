@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import { Header, Text } from '../../themes/typography'
+import screen from '../../themes/screens'
 import Marketing from '../../images/svg/retain-customers.svg'
 import Overhead from '../../images/svg/reduce-overhead.svg'
 import Sales from '../../images/svg/drive-sales.svg'
@@ -10,6 +11,11 @@ import Sales from '../../images/svg/drive-sales.svg'
 const Section = styled.div`
     padding: 8rem 0;
     border: 1px solid #f2f2f2;
+`
+const CardGrid = styled(Grid)`
+    @media ${screen.lg} {
+        grid-column-gap: 2rem;
+    }
 `
 const Col = styled(Column)`
     padding: 5.4rem 4rem;
@@ -19,6 +25,7 @@ const Col = styled(Column)`
 `
 const Icon = styled.div`
     padding: 0 0 2.4rem;
+    max-width: 100%;
 `
 
 const WhatWeDo = () => (
@@ -27,7 +34,7 @@ const WhatWeDo = () => (
             <Header as="h2" align="center" lh="2" margin="0 0 4rem">
                 What we do
             </Header>
-            <Grid
+            <CardGrid
                 columns="repeat(3, 1fr)"
                 columngap="5.8rem"
                 rowgap="5rem"
@@ -70,7 +77,7 @@ const WhatWeDo = () => (
                         finances, and more to help you lower operational costs.
                     </Text>
                 </Col>
-            </Grid>
+            </CardGrid>
         </Container>
     </Section>
 )

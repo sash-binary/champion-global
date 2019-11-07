@@ -44,7 +44,7 @@
         "stylelint-webpack-plugin": "^1.0.3"
     },
     "keywords": [
-        "gatsby"
+        "champion"
     ],
     "license": "MIT",
     "scripts": {
