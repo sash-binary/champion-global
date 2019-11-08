@@ -7,7 +7,7 @@
     "dependencies": {
         "extend": "^3.0.2",
         "gatsby": "^2.17.6",
-        "gatsby-background-image": "^0.8.17",
+        "gatsby-background-image": "^0.8.18",
         "gatsby-image": "^2.2.30",
         "gatsby-plugin-manifest": "^2.2.25",
         "gatsby-plugin-offline": "^3.0.17",
@@ -18,6 +18,7 @@
         "gatsby-source-filesystem": "^2.1.35",
         "gatsby-transformer-sharp": "^2.3.1",
         "gh-pages": "^2.1.1",
+        "intersection-observer": "^0.7.0",
         "prop-types": "^15.7.2",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
@@ -57,7 +58,7 @@
         "serve": "gatsby serve",
         "test": "npm run stylelint && npm run eslint",
         "deploy": "npm run build && gh-pages -d public -b master",
-        "deploy-dev": "npm run build --prefix-paths && gh-pages -d public"
+        "deploy-dev": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "repository": {
         "type": "git",

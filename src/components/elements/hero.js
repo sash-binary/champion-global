@@ -3,20 +3,10 @@ import styled from 'styled-components'
 import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import { Header } from '../../themes/typography'
-import BackgroundImg from '../../images/header.jpg'
 import Button from './button'
 import scrollTo from 'gatsby-plugin-smoothscroll'
+import BackgroundImg from './backgroundimage'
 
-const HeroSection = styled.div`
-    padding: 9rem 0 4rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
-        url(${props => props.img});
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    min-height: 65rem;
-`
 const HeroContent = styled(Grid)`
     padding: 12.6rem 0 0;
 `
@@ -30,9 +20,10 @@ const Cta = styled(Button)`
 `
 
 const Hero = () => (
-    <HeroSection
-        id="hero"
-        img={BackgroundImg}
+    <BackgroundImg
+        img_name='header.jpg'
+        brightness='0.75'
+        style={{height: '90vh', minHeight: '65rem'}}
     >
         <Container>
             <HeroContent
@@ -57,6 +48,6 @@ const Hero = () => (
                 </Col>
             </HeroContent>
         </Container>
-    </HeroSection>
+    </BackgroundImg>
 )
 export default Hero

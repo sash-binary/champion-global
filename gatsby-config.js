@@ -1,6 +1,5 @@
-const path = require(`path`)
 module.exports = {
-    pathPrefix: '/champion-global/',
+    pathPrefix: '/champion-global',
     siteMetadata: {
         title: `Champion Global Business Services`,
         description: `World-class support services for FinTech businesses`,
@@ -13,7 +12,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'images',
-                path: path.join(__dirname, `src`, `images`),
+                path: `${__dirname}/src/images`,
             },
         },
         'gatsby-transformer-sharp',

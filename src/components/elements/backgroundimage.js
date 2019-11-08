@@ -1,10 +1,15 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import PropTypes from 'prop-types'
 
-const BackgroundSection = ({ img_name }) => (
+const Background = ({
+    children,
+    img_name,
+    style,
+    brightness,
+    ...props
+}) => (
     <StaticQuery
         query={graphql`
             query {
@@ -12,7 +17,7 @@ const BackgroundSection = ({ img_name }) => (
                     edges {
                         node {
                             fluid(maxWidth: 1920) {
-                                ...GatsbyImageSharpFluid
+                                ...GatsbyImageSharpFluid_withWebp
                                 originalName
                             }
                         }
@@ -25,26 +30,32 @@ const BackgroundSection = ({ img_name }) => (
                 edge => edge.node.fluid.originalName === img_name,
             )
             if (!image) return null
+            const fluidStack = [image.node.fluid]
+
+            if (brightness) {
+                fluidStack.push(
+                    `linear-gradient(rgba(0,0,0,${brightness}), rgba(0,0,0,0))`,
+                )
+            }
 
             return (
                 <BackgroundImage
-                    fluid={image.node.fluid}
-                    backgroundColor={`#040e18`}
-                ></BackgroundImage>
+                    Tag="div"
+                    style={style}
+                    fluid={fluidStack.reverse()}
+                    {...props}
+                >
+                    {children}
+                </BackgroundImage>
             )
         }}
     />
 )
 
-const StyledBackgroundSection = styled(BackgroundSection)`
-    width: 100%;
-    background-position: bottom center;
-    background-repeat: repeat-y;
-    background-size: cover;
-`
-
-BackgroundSection.propTypes = {
+Background.propTypes = {
+    brightness: PropTypes.string,
+    children: PropTypes.node,
     img_name: PropTypes.string,
+    style: PropTypes.object
 }
-
-export default StyledBackgroundSection
+export default Background
