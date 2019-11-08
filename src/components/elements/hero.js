@@ -7,15 +7,6 @@ import Button from './button'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import BackgroundImg from './backgroundimage'
 
-const HeroSection = styled(BackgroundImg)`
-    padding: 9rem 0 4rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    min-height: 65rem;
-`
 const HeroContent = styled(Grid)`
     padding: 12.6rem 0 0;
 `
@@ -29,7 +20,7 @@ const Cta = styled(Button)`
 `
 
 const Hero = () => (
-    <HeroSection
+    <BackgroundImg
         img_name='header.jpg'
         brightness='0.75'
         style={{height: '90vh', minHeight: '65rem'}}
@@ -57,6 +48,6 @@ const Hero = () => (
                 </Col>
             </HeroContent>
         </Container>
-    </HeroSection>
+    </BackgroundImg>
 )
 export default Hero

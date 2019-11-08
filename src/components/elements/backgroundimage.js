@@ -16,7 +16,7 @@ const Background = ({
                 allImageSharp {
                     edges {
                         node {
-                            fluid(quality: 90, maxWidth: 4160) {
+                            fluid(maxWidth: 1920) {
                                 ...GatsbyImageSharpFluid_withWebp
                                 originalName
                             }

@@ -58,7 +58,7 @@
         "serve": "gatsby serve",
         "test": "npm run stylelint && npm run eslint",
         "deploy": "npm run build && gh-pages -d public -b master",
-        "deploy-dev": "npm run build && gh-pages -d public"
+        "deploy-dev": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "repository": {
         "type": "git",
