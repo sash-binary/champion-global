@@ -8,7 +8,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import BackgroundImg from './backgroundimage'
 
 const HeroContent = styled(Grid)`
-    padding: 12.6rem 0 0;
+    padding: 20rem 0 0;
 `
 const Col = styled(Column)`
     padding: 0;
@@ -23,14 +23,11 @@ const Hero = () => (
     <BackgroundImg
         img_name='header.jpg'
         brightness='0.75'
-        style={{height: '90vh', minHeight: '65rem'}}
+        style={{height: '90vh', minHeight: '50rem'}}
     >
-        <Container>
+        <Container id="hero">
             <HeroContent
                 columns="1fr"
-                columngap="1rem"
-                rowgap="5rem"
-                mobilerowgap="3rem"
                 justify="center"
             >
                 <Col justify="center">
