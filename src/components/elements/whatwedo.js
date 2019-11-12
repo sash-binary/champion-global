@@ -4,9 +4,9 @@ import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import { Header, Text } from '../../themes/typography'
 import screen from '../../themes/screens'
-import Marketing from '../../images/svg/retain-customers.svg'
-import Overhead from '../../images/svg/reduce-overhead.svg'
-import Sales from '../../images/svg/drive-sales.svg'
+import Marketing from '../../images/svg/sharing.svg'
+import Overhead from '../../images/svg/training.svg'
+import Sales from '../../images/svg/growth.svg'
 
 const Section = styled.div`
     padding: 8rem 0;
@@ -24,8 +24,9 @@ const Col = styled(Column)`
     text-align: center;
 `
 const Icon = styled.div`
+    margin: 0 auto;
     padding: 0 0 2.4rem;
-    max-width: 100%;
+    max-width: 14rem;
 `
 
 const WhatWeDo = () => (
