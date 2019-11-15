@@ -13,7 +13,7 @@ import Contact from '../components/elements/contacts'
 const Home = () => (
     <>
         <Layout>
-            <SEO title="Home" />
+            <SEO title="Welcome" />
             <Hero />
             <Intro />
             <WhatWeDo />

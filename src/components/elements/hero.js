@@ -18,7 +18,6 @@ const Col = styled(Column)`
 const Cta = styled(Button)`
     margin: 4rem 0;
 `
-
 const Hero = () => (
     <BackgroundImg
         img_name='header.jpg'
