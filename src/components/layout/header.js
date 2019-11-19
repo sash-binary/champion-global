@@ -4,7 +4,6 @@ import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import screen from '../../themes/screens'
 import scrollTo from 'gatsby-plugin-smoothscroll'
-//import MobileNav from'../elements/mobilenav'
 import HeaderLogo from '../../images/svg/champion-logo.svg'
 import Hamburger from '../../images/svg/menu.svg'
 
@@ -49,7 +48,7 @@ const MainNav = styled(Column)`
         width: 25rem;
         height: 100vh;
         z-index: 9;
-        transition: left 0.25s ease-in;
+        transition: left 0.25s ease-in-out;
         background-color: var(--color-white);
         box-shadow: 0.5rem 0 2rem rgba(0,0,0,0.3);
         overflow: auto;
