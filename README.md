@@ -24,6 +24,7 @@ Static content
 
     ```sh
     npm run format
+    ```
 
 ## 🚀 Quick start
 
