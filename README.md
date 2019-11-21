@@ -50,7 +50,7 @@ Static content
 
 **Basic name.github.io/champion-global/**
 
-    ```sh
-    npm run deploy-dev
-    ```
+```
+npm run deploy-dev
+```
 
