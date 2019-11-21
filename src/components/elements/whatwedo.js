@@ -3,30 +3,19 @@ import styled from 'styled-components'
 import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import { Header, Text } from '../../themes/typography'
-import screen from '../../themes/screens'
-import Marketing from '../../images/svg/sharing.svg'
-import Overhead from '../../images/svg/training.svg'
-import Sales from '../../images/svg/growth.svg'
+import Marketing from '../../images/svg/marketing.svg'
+import Administration from '../../images/svg/business-administration.svg'
+import Support from '../../images/svg/customer-support.svg'
 
 const Section = styled.div`
-    padding: 8rem 0;
-    border: 1px solid #f2f2f2;
-`
-const CardGrid = styled(Grid)`
-    @media ${screen.lg} {
-        grid-column-gap: 2rem;
-    }
+    padding: 8rem 0 4rem;
 `
 const Col = styled(Column)`
-    padding: 5.4rem 4rem;
-    background-color: var(--color-blue);
-    border-radius: 0.6rem;
+    padding: 0;
     text-align: center;
 `
 const Icon = styled.div`
-    margin: 0 auto;
     padding: 0 0 2.4rem;
-    max-width: 14rem;
 `
 
 const WhatWeDo = () => (
@@ -35,50 +24,46 @@ const WhatWeDo = () => (
             <Header as="h2" align="center" lh="2" margin="0 0 4rem">
                 What we do
             </Header>
-            <CardGrid
+            <Grid
                 columns="repeat(3, 1fr)"
-                columngap="5.8rem"
+                columngap="6.5rem"
                 rowgap="5rem"
-                mobilerowgap="3rem"
+                mobilerowgap="5rem"
             >
-                <Col justify="center">
-                    <Icon>
-                        <Sales />
-                    </Icon>
-                    <Header as="h4" color="white" align="center" lh="2">
-                        Drive sales
-                    </Header>
-                    <Text color="white" align="center">
-                        Our marketing experts will grow your brand, generate
-                        leads, and acquire new customers for your business.
-                    </Text>
-                </Col>
                 <Col justify="center">
                     <Icon>
                         <Marketing />
                     </Icon>
-                    <Header as="h4" color="white" align="center" lh="2">
-                        Retain customers
+                    <Header as="h4" align="center" lh="2">
+                        Marketing
                     </Header>
-                    <Text color="white" align="center">
-                        We will show you how to consistently add value to your
-                        customers’ lives to increase brand loyalty and keep them
-                        coming back.
+                    <Text align="center">
+                        We optimise customer touchpoints and user experiences to help companies acquire new customers and increase sales with a data-driven approach.
                     </Text>
                 </Col>
                 <Col justify="center">
                     <Icon>
-                        <Overhead />
+                        <Support />
                     </Icon>
-                    <Header as="h4" color="white" align="center" lh="2">
-                        Reduce overhead
+                    <Header as="h4" align="center" lh="2">
+                        Customer support
                     </Header>
-                    <Text color="white" align="center">
-                        Our specialists can manage your HR, talent recruitment,
-                        finances, and more to help you lower operational costs.
+                    <Text align="center">
+                        We deliver best-in-class customer experiences that anticipate challenges, solve problems, and delight customers to increase brand loyalty and repeat sales.
                     </Text>
                 </Col>
-            </CardGrid>
+                <Col justify="center">
+                    <Icon>
+                        <Administration />
+                    </Icon>
+                    <Header as="h4" align="center" lh="2">
+                        Business support
+                    </Header>
+                    <Text align="center">
+                        We lower operational costs and keep businesses running with admin support services such as HR operations, finance, recruitment, and accounting.
+                    </Text>
+                </Col>
+            </Grid>
         </Container>
     </Section>
 )

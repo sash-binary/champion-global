@@ -74,11 +74,10 @@ const Content = styled.div`
     }
 `
 const Jobs = styled.ul`
-    margin: 0.6rem 0 0;
+    margin: 1rem 0 0;
 `
 const Job = styled.li`
-    margin: 0 0 2rem;
-    display: block;
+    margin: 0 0 2rem 4rem;
     color: var(--color-white);
 `
 
@@ -99,11 +98,23 @@ const Careers = () => (
                         >
                             Careers
                         </Header>
+                        <Header
+                            as="h4"
+                            color="white"
+                            align="left"
+                            lh="2"
+                            margin="0"
+                        >
+                            Life @ Champion Global
+                        </Header>
                         <Text color="white">
-                            Join leading specialists in the fields of sales,
-                            marketing, customer support, finance, HR, recruitment,
-                            and more who have come together from all over the world
-                            to solve the most challenging problems in FinTech.
+                            Join leading specialists in the fields of sales, marketing, customer support, finance, HR, recruitment, and more who have come together from all over the world to solve the most challenging problems in financial technology.
+                        </Text>
+                        <Text color="white" margin="2rem 0">
+                            At Champion Global, we empower exceptional talent by giving them the freedom and tools they need to explore their ideas and push into new frontiers.
+                        </Text>
+                        <Text color="white">
+                            With a collaborative culture that places teamwork above all else, you will also find the support you need to expand your horizons and live up to your full potential.
                         </Text>
                         <Header
                             as="h5"
@@ -111,7 +122,7 @@ const Careers = () => (
                             align="left"
                             lh="2"
                             margin="1.2rem 0 0.6rem"
-                            weight="normal"
+                            weight="bold"
                         >
                             We’re currently hiring for these roles:
                         </Header>
