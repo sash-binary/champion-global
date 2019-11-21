@@ -47,7 +47,7 @@ Static content
 
 ## 📦 GH-pages deployment
 
-1. **Basic name.github.io/deriv-com/**
+**Basic name.github.io/champion-global/**
 
     ```sh
     npm run deploy-dev
