@@ -7,7 +7,6 @@ Static content
 -   node
 -   npm
 -   gatsby-cli (npm install -g gatsby-cli)
--   Prettier setup in your editor https://prettier.io/ (or you can run `npm run format`)
 
 ## Editor helpers
 
