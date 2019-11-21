@@ -126,19 +126,14 @@ const Header = () => {
                     <MainNav align="center" id="test-nav">
                         <Nav>
                             <NavLink
+                                onClick={() => {scrollTo('#who'); handleMobileNav();}}
+                            >
+                                About us
+                            </NavLink>
+                            <NavLink
                                 onClick={() => {scrollTo('#what'); handleMobileNav();}}
                             >
                                 What we do
-                            </NavLink>
-                            <NavLink
-                                onClick={() => {scrollTo('#offer'); handleMobileNav();}}
-                            >
-                                What we offer
-                            </NavLink>
-                            <NavLink
-                                onClick={() => {scrollTo('#who'); handleMobileNav();}}
-                            >
-                                Who we are
                             </NavLink>
                             <NavLink
                                 onClick={() => { scrollTo('#careers'); handleMobileNav();}}
@@ -148,7 +143,7 @@ const Header = () => {
                             <NavLink
                                 onClick={() => { scrollTo('#withus'); handleMobileNav();}}
                             >
-                                Work with us
+                                Contact us
                             </NavLink>
                         </Nav>
                     </MainNav>

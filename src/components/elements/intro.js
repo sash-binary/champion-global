@@ -31,10 +31,7 @@ const Intro = () => (
             >
                 <Col justify="center">
                     <Header as="h4" align="center" lh="3.6rem">
-                        Looking for an advantage over your competitors?
-                        Outsource your company’s most important functions to
-                        Champion Global experts who will add real, measurable
-                        value to your business.
+                        Champion Global Business Services is a support services company based in Cyberjaya. We help the Binary Group to achieve exceptional growth by leveraging data, technology, and a deep understanding of consumer behaviour.
                     </Header>
                 </Col>
             </HeroContent>

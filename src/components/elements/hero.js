@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import Container from '../containers/container'
 import Grid, { Column } from '../containers/grid'
 import { Header } from '../../themes/typography'
-import Button from './button'
-import scrollTo from 'gatsby-plugin-smoothscroll'
 import BackgroundImg from './backgroundimage'
 
 const HeroContent = styled(Grid)`
@@ -12,11 +10,8 @@ const HeroContent = styled(Grid)`
 `
 const Col = styled(Column)`
     padding: 0;
-    max-width: 60rem;
+    max-width: 80rem;
     text-align: center;
-`
-const Cta = styled(Button)`
-    margin: 4rem 0;
 `
 const Hero = () => (
     <BackgroundImg
@@ -34,13 +29,8 @@ const Hero = () => (
                         Champion Global Business Services
                     </Header>
                     <Header as="h5" color="white" align="center">
-                        World-class support services for FinTech businesses
+                        World-class support services at the intersection of finance and technology
                     </Header>
-                    <Cta
-                        onClick={() => scrollTo('#careers')}
-                    >
-                        Contact Us Now
-                    </Cta>
                 </Col>
             </HeroContent>
         </Container>

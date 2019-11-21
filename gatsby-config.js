@@ -2,7 +2,7 @@ module.exports = {
     pathPrefix: '/champion-global',
     siteMetadata: {
         title: `Champion Global Business Services`,
-        description: `World-class support services for FinTech businesses`,
+        description: `World-class support services at the intersection of finance and technology`,
         author: `championgbs.com`,
     },
     plugins: [
