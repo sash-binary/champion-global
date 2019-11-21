@@ -82,9 +82,7 @@ const Job = styled.li`
 `
 
 const Careers = () => (
-    <Section
-        id="careers"
-    >
+    <Section id="careers">
         <Container>
             <FeaturedGrid>
                 <Column>
@@ -108,13 +106,22 @@ const Careers = () => (
                             Life @ Champion Global
                         </Header>
                         <Text color="white">
-                            Join leading specialists in the fields of sales, marketing, customer support, finance, HR, recruitment, and more who have come together from all over the world to solve the most challenging problems in financial technology.
+                            Join leading specialists in the fields of sales,
+                            marketing, customer support, finance, HR,
+                            recruitment, and more who have come together from
+                            all over the world to solve the most challenging
+                            problems in financial technology.
                         </Text>
                         <Text color="white" margin="2rem 0">
-                            At Champion Global, we empower exceptional talent by giving them the freedom and tools they need to explore their ideas and push into new frontiers.
+                            At Champion Global, we empower exceptional talent by
+                            giving them the freedom and tools they need to
+                            explore their ideas and push into new frontiers.
                         </Text>
                         <Text color="white">
-                            With a collaborative culture that places teamwork above all else, you will also find the support you need to expand your horizons and live up to your full potential.
+                            With a collaborative culture that places teamwork
+                            above all else, you will also find the support you
+                            need to expand your horizons and live up to your
+                            full potential.
                         </Text>
                         <Header
                             as="h5"
@@ -134,15 +141,13 @@ const Careers = () => (
                         </Jobs>
                     </Content>
                 </Column>
-                <Column
-                    align="center"
-                >
+                <Column align="center">
                     <FeaturedImage>
-                    <Image
-                        width="691px"
-                        img_name="careers.png"
-                        alt="who we are"
-                    />
+                        <Image
+                            width="691px"
+                            img_name="careers.png"
+                            alt="who we are"
+                        />
                     </FeaturedImage>
                 </Column>
             </FeaturedGrid>

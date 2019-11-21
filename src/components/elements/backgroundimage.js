@@ -3,13 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import PropTypes from 'prop-types'
 
-const Background = ({
-    children,
-    img_name,
-    style,
-    brightness,
-    ...props
-}) => (
+const Background = ({ children, img_name, style, brightness, ...props }) => (
     <StaticQuery
         query={graphql`
             query {
@@ -56,6 +50,6 @@ Background.propTypes = {
     brightness: PropTypes.string,
     children: PropTypes.node,
     img_name: PropTypes.string,
-    style: PropTypes.object
+    style: PropTypes.object,
 }
 export default Background

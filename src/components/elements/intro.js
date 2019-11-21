@@ -31,7 +31,11 @@ const Intro = () => (
             >
                 <Col justify="center">
                     <Header as="h4" align="center" lh="3.6rem">
-                        Champion Global Business Services is a support services company based in Cyberjaya. We help the Binary Group to achieve exceptional growth by leveraging data, technology, and a deep understanding of consumer behaviour.
+                        Champion Global Business Services is a support services
+                        company based in Cyberjaya. We help the Binary Group to
+                        achieve exceptional growth by leveraging data,
+                        technology, and a deep understanding of consumer
+                        behaviour.
                     </Header>
                 </Col>
             </HeroContent>

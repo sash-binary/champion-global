@@ -38,7 +38,9 @@ const WhatWeDo = () => (
                         Marketing
                     </Header>
                     <Text align="center">
-                        We optimise customer touchpoints and user experiences to help companies acquire new customers and increase sales with a data-driven approach.
+                        We optimise customer touchpoints and user experiences to
+                        help companies acquire new customers and increase sales
+                        with a data-driven approach.
                     </Text>
                 </Col>
                 <Col justify="center">
@@ -49,7 +51,9 @@ const WhatWeDo = () => (
                         Customer support
                     </Header>
                     <Text align="center">
-                        We deliver best-in-class customer experiences that anticipate challenges, solve problems, and delight customers to increase brand loyalty and repeat sales.
+                        We deliver best-in-class customer experiences that
+                        anticipate challenges, solve problems, and delight
+                        customers to increase brand loyalty and repeat sales.
                     </Text>
                 </Col>
                 <Col justify="center">
@@ -60,7 +64,9 @@ const WhatWeDo = () => (
                         Business support
                     </Header>
                     <Text align="center">
-                        We lower operational costs and keep businesses running with admin support services such as HR operations, finance, recruitment, and accounting.
+                        We lower operational costs and keep businesses running
+                        with admin support services such as HR operations,
+                        finance, recruitment, and accounting.
                     </Text>
                 </Col>
             </Grid>

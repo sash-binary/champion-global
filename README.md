@@ -9,13 +9,22 @@ Static content
 -   gatsby-cli (npm install -g gatsby-cli)
 -   Prettier setup in your editor https://prettier.io/ (or you can run `npm run format`)
 
-
 ## Editor helpers
 
 -   Prettier setup in your editor https://prettier.io/ (or you can run `npm run format`)
 -   Stylelint setup in your editor https://stylelint.io/ (or you can run `npm run stylelint`)
 -   Eslint setup in your editor https://eslint.org/ (or you can run `npm run eslint`)
 
+1.  **Test**
+
+    ```sh
+    npm run test
+    ```
+
+2.  **Format**
+
+    ```sh
+    npm run format
 
 ## 🚀 Quick start
 
