@@ -53,4 +53,3 @@ Static content
     npm run deploy-dev
     ```
 
-    ⚠️ This will remove your branch deployments
