@@ -15,21 +15,19 @@ const Col = styled(Column)`
 `
 const Hero = () => (
     <BackgroundImg
-        img_name='header.jpg'
-        brightness='0.75'
-        style={{height: '90vh', minHeight: '50rem'}}
+        img_name="header.jpg"
+        brightness="0.75"
+        style={{ height: '90vh', minHeight: '50rem' }}
     >
         <Container id="hero">
-            <HeroContent
-                columns="1fr"
-                justify="center"
-            >
+            <HeroContent columns="1fr" justify="center">
                 <Col justify="center">
                     <Header as="h1" color="white" align="center">
                         Champion Global Business Services
                     </Header>
                     <Header as="h5" color="white" align="center">
-                        World-class support services at the intersection of finance and technology
+                        World-class support services at the intersection of
+                        finance and technology
                     </Header>
                 </Col>
             </HeroContent>

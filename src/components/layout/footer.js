@@ -91,80 +91,40 @@ const Footer = () => (
                     <Company>
                         <Logo />
                         <CompanyInfo>
-                            <Text
-                                weight="bold"
-                            >
+                            <Text weight="bold">
                                 Champion Global Business Services
                             </Text>
-                            <Text
-                                weight="bold"
-                            >
-                                Sdn Bhd (1336703-K)
-                            </Text>
+                            <Text weight="bold">Sdn Bhd (1336703-K)</Text>
                         </CompanyInfo>
                     </Company>
-                    <Text
-                        lh="2"
-                    >
-                        C-12-01, iTech Tower, Jalan Impact,
-                    </Text>
-                    <Text
-                        lh="2"
-                    >
+                    <Text lh="2">C-12-01, iTech Tower, Jalan Impact,</Text>
+                    <Text lh="2">
                         Cyber 6, 63000 Cyberjaya, Selangor Malaysia
                     </Text>
                 </Col>
                 <Col>
-                    <Header
-                        as="h6"
-                        color="white"
-                        margin="0 0 1.5rem 0"
-                    >
+                    <Header as="h6" color="white" margin="0 0 1.5rem 0">
                         Contact us
                     </Header>
-                    <ColGrid
-                        columns="3rem 1fr"
-                        columngap="1rem"
-                    >
+                    <ColGrid columns="3rem 1fr" columngap="1rem">
                         <Phone />
-                        <Text
-                            lh="2"
-                        >
-                            +603-83228178
-                        </Text>
+                        <Text lh="2">+603-83228178</Text>
                         <Mail />
-                        <Text
-                            lh="2"
-                        >
-                            hr@championgbs.com
-                        </Text>
+                        <Text lh="2">hr@championgbs.com</Text>
                     </ColGrid>
                 </Col>
                 <Col>
                     <Links>
-                        <Header
-                            as="h6"
-                            color="white"
-                            margin="0 0 0.8rem 0"
-                        >
+                        <Header as="h6" color="white" margin="0 0 0.8rem 0">
                             Links
                         </Header>
-                        <FooterLink
-                            lh="2"
-                            onClick={() => scrollTo('#offer')}
-                        >
+                        <FooterLink lh="2" onClick={() => scrollTo('#offer')}>
                             Our core offering
                         </FooterLink>
-                        <FooterLink
-                            lh="2"
-                            onClick={() => scrollTo('#who')}
-                        >
+                        <FooterLink lh="2" onClick={() => scrollTo('#who')}>
                             Who we are
                         </FooterLink>
-                        <FooterLink
-                            lh="2"
-                            onClick={() => scrollTo('#what')}
-                        >
+                        <FooterLink lh="2" onClick={() => scrollTo('#what')}>
                             What we do
                         </FooterLink>
                     </Links>

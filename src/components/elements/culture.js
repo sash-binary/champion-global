@@ -34,7 +34,9 @@ const Culture = () => (
                         Teamwork
                     </Header>
                     <Text align="center">
-                        We pride ourselves on a collaborative culture where everyone is like a second family. We always come together to solve challenges and achieve common goals.
+                        We pride ourselves on a collaborative culture where
+                        everyone is like a second family. We always come
+                        together to solve challenges and achieve common goals.
                     </Text>
                 </Col>
                 <Col justify="center">
@@ -42,7 +44,9 @@ const Culture = () => (
                         Integrity
                     </Header>
                     <Text align="center">
-                        We believe in always doing the right thing. We base our decisions on our moral principles and don’t look for the easy way out.
+                        We believe in always doing the right thing. We base our
+                        decisions on our moral principles and don’t look for the
+                        easy way out.
                     </Text>
                 </Col>
                 <Col justify="center">
@@ -50,7 +54,8 @@ const Culture = () => (
                         Competence
                     </Header>
                     <Text align="center">
-                        Our people are smart, talented, and always ready to roll up their sleeves and get things done.
+                        Our people are smart, talented, and always ready to roll
+                        up their sleeves and get things done.
                     </Text>
                 </Col>
                 <Col justify="center">
@@ -58,7 +63,9 @@ const Culture = () => (
                         Open communication
                     </Header>
                     <Text align="center">
-                        We encourage open communication and discussions about our work processes and strategy. Everyone’s opinion is valued and we strive to be as transparent as possible.
+                        We encourage open communication and discussions about
+                        our work processes and strategy. Everyone’s opinion is
+                        valued and we strive to be as transparent as possible.
                     </Text>
                 </Col>
             </Grid>

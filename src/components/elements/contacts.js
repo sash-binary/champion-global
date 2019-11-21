@@ -63,9 +63,7 @@ const Content = styled.div`
 `
 
 const Contact = () => (
-    <Section
-        id="withus"
-    >
+    <Section id="withus">
         <Container>
             <FeaturedGrid>
                 <Col>
@@ -77,9 +75,7 @@ const Contact = () => (
                         />
                     </FeaturedImage>
                 </Col>
-                <Col
-                    bgcolor="white"
-                >
+                <Col bgcolor="white">
                     <Content>
                         <Header as="h4" align="left">
                             If you’re interested,
@@ -98,4 +94,3 @@ const Contact = () => (
     </Section>
 )
 export default Contact
-

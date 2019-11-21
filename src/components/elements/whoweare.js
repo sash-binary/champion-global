@@ -66,23 +66,19 @@ const FeaturedImage = styled.div`
 `
 
 const WhoWeAre = () => (
-    <Section
-        id="who"
-    >
+    <Section id="who">
         <Container>
             <FeaturedGrid>
                 <Column>
                     <FeaturedImage>
-                    <Image
-                        width="682px"
-                        img_name="whoweare.png"
-                        alt="who we are"
-                    />
+                        <Image
+                            width="682px"
+                            img_name="whoweare.png"
+                            alt="who we are"
+                        />
                     </FeaturedImage>
                 </Column>
-                <Column
-                    align="center"
-                >
+                <Column align="center">
                     <Header
                         as="h2"
                         color="white"
@@ -93,10 +89,16 @@ const WhoWeAre = () => (
                         Who we are
                     </Header>
                     <Text color="white">
-                        Champion Global Business Services is a business support services provider based in Cyberjaya –– Malaysia’s pioneer tech hub.
+                        Champion Global Business Services is a business support
+                        services provider based in Cyberjaya –– Malaysia’s
+                        pioneer tech hub.
                     </Text>
                     <Text color="white" margin="2rem 0 0">
-                        Founded in 2019 by the Binary Group, we operate at the intersection of finance and technology –– powered by 20 years of innovation. Our progressive values transcend boundaries and provide our talented and tech-savvy people with the ideal platform to make a global impact.
+                        Founded in 2019 by the Binary Group, we operate at the
+                        intersection of finance and technology –– powered by 20
+                        years of innovation. Our progressive values transcend
+                        boundaries and provide our talented and tech-savvy
+                        people with the ideal platform to make a global impact.
                     </Text>
                 </Column>
             </FeaturedGrid>
@@ -105,4 +107,3 @@ const WhoWeAre = () => (
     </Section>
 )
 export default WhoWeAre
-

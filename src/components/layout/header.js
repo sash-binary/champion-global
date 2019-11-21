@@ -50,7 +50,7 @@ const MainNav = styled(Column)`
         z-index: 9;
         transition: left 0.25s ease-in-out;
         background-color: var(--color-white);
-        box-shadow: 0.5rem 0 2rem rgba(0,0,0,0.3);
+        box-shadow: 0.5rem 0 2rem rgba(0, 0, 0, 0.3);
         overflow: auto;
 
         &.active {
@@ -110,7 +110,7 @@ const Header = () => {
         mobnav.classList.toggle('active')
     }
     return (
-        <StyledHeader id="header" ref={nav_ref} >
+        <StyledHeader id="header" ref={nav_ref}>
             <Container>
                 <Grid
                     columns="1fr 6fr"
@@ -126,22 +126,34 @@ const Header = () => {
                     <MainNav align="center" id="test-nav">
                         <Nav>
                             <NavLink
-                                onClick={() => {scrollTo('#who'); handleMobileNav();}}
+                                onClick={() => {
+                                    scrollTo('#who')
+                                    handleMobileNav()
+                                }}
                             >
                                 About us
                             </NavLink>
                             <NavLink
-                                onClick={() => {scrollTo('#what'); handleMobileNav();}}
+                                onClick={() => {
+                                    scrollTo('#what')
+                                    handleMobileNav()
+                                }}
                             >
                                 What we do
                             </NavLink>
                             <NavLink
-                                onClick={() => { scrollTo('#careers'); handleMobileNav();}}
+                                onClick={() => {
+                                    scrollTo('#careers')
+                                    handleMobileNav()
+                                }}
                             >
                                 Careers
                             </NavLink>
                             <NavLink
-                                onClick={() => { scrollTo('#withus'); handleMobileNav();}}
+                                onClick={() => {
+                                    scrollTo('#withus')
+                                    handleMobileNav()
+                                }}
                             >
                                 Contact us
                             </NavLink>
@@ -149,9 +161,7 @@ const Header = () => {
                     </MainNav>
                 </Grid>
             </Container>
-            <NavBtn
-                onClick={handleMobileNav}
-            >
+            <NavBtn onClick={handleMobileNav}>
                 <Hamburger />
             </NavBtn>
         </StyledHeader>
