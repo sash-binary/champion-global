@@ -57,7 +57,7 @@
         "start": "npm run develop",
         "serve": "gatsby serve",
         "test": "npm run stylelint && npm run eslint",
-        "deploy": "npm run build && gh-pages -d public -b master",
+        "deploy": "npm run build && cp ./script/CNAME public/ && node ./deploy-github.js",
         "deploy-dev": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "repository": {
