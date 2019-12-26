@@ -50,7 +50,16 @@ Static content
 
 **Basic name.github.io/champion-global/**
 
+
+Deploy to development gh-pages
 ```
 npm run deploy-dev
 ```
 
+Deploy to production
+```
+npm run deploy
+```
+**note**:
+make sure you have CNAME before deploy to production.
+add custom domain name to `script/CNAME`
