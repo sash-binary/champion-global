@@ -118,14 +118,14 @@ const Footer = () => (
                         <Header as="h6" color="white" margin="0 0 0.8rem 0">
                             Links
                         </Header>
-                        <FooterLink lh="2" onClick={() => scrollTo('#offer')}>
-                            Our core offering
-                        </FooterLink>
                         <FooterLink lh="2" onClick={() => scrollTo('#who')}>
                             Who we are
                         </FooterLink>
                         <FooterLink lh="2" onClick={() => scrollTo('#what')}>
                             What we do
+                        </FooterLink>
+                        <FooterLink lh="2" onClick={() => scrollTo('#culture')}>
+                            Our culture
                         </FooterLink>
                     </Links>
                 </Col>

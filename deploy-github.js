@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'gh-pages',
-    repo: 'git@github.com:binary-com/champion-global.git',
+    repo: 'git@github.com:sash-binary/champion-global.git',
   },
   (err) => {
     // eslint-disable-next-line no-console
